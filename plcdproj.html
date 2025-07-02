@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLACED</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #fff;
+    }
+    header {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .resource-list, .event-list {
+      list-style: none;
+      padding: 0;
+    }
+    .resource-list li, .event-list li {
+      margin: 1rem 0;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form select, form button {
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PLACED</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#resources">Resources</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Tangible Hope. Spiritual Help. Real Support.</h1>
+    <p>Equipping churches to serve foster families.</p>
+  </div>
+
+  <section id="about">
+    <h2>About PLACED</h2>
+    <p>PLACED exists to equip the church to support foster families through tangible care, relational support, and spiritual encouragement.</p>
+    <p>Our mission is driven by a deep belief that the Church can be the hands and feet of Jesus to vulnerable children and the families who care for them.</p>
+  </section>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <ul class="event-list">
+      <li><strong>Foster Family Day Off</strong><br>Date: August 10, 2025<br>Location: FBC Park Pavilion</li>
+      <li><strong>PLACED Seminar</strong><br>Date: September 14, 2025<br>Location: Downtown Ministry Center</li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>Resources</h2>
+    <ul class="resource-list">
+      <li><a href="#">Church Toolkit PDF</a></li>
+      <li><a href="#">Foster Family Welcome Packet</a></li>
+      <li><a href="#">First 24 Hours Guide</a></li>
+    </ul>
+  </section>
+
+  <section id="signup">
+    <h2>Get Involved</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="church" placeholder="Church Name (optional)">
+      <select name="interest">
+        <option value="">How do you want to help?</option>
+        <option value="foster">I want to foster</option>
+        <option value="support">I want to support foster families</option>
+        <option value="host">I want PLACED to come to my church</option>
+        <option value="learn">I just want to learn more</option>
+      </select>
+      <button type="submit">Get Involved</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PLACED Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
